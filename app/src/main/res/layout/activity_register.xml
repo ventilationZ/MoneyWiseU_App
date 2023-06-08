@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/minimalist"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/edtpasswordreg"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button_bg"
+        android:ems="10"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/edtemailreg"
+        app:layout_constraintTop_toBottomOf="@+id/edtemailreg" />
+
+    <EditText
+        android:id="@+id/edtemailreg"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_bg"
+        android:ems="10"
+        android:hint="Enter Your EmailAddress"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/edtname"
+        app:layout_constraintTop_toBottomOf="@+id/edtname" />
+
+    <Button
+        android:id="@+id/btncreateacc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#1F9AA3"
+        android:text="Create An Account"
+        app:cornerRadius="@android:dimen/app_icon_size"
+        app:layout_constraintStart_toStartOf="@+id/edtpasswordreg"
+        app:layout_constraintTop_toBottomOf="@+id/edtpasswordreg" />
+
+    <EditText
+        android:id="@+id/edtname"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/button_bg"
+        android:ems="10"
+        android:hint="Enter Your Full Names"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

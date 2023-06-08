@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/minimalist"
+    tools:context=".LoginActivity">
+
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1F9AA3"
+        android:text="Login"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="412dp" />
+
+    <EditText
+        android:id="@+id/edtemail"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/cardview_default_radius"
+        android:background="@drawable/button_bg"
+        android:ems="10"
+        android:hint="Enter your EmailAddress"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1F9AA3"
+        android:text="Register"
+        android:textColor="@color/black"
+        app:iconTint="#F1F1F1"
+        app:rippleColor="@color/teal_200"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <EditText
+        android:id="@+id/edtpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/button_bg"
+        android:ems="10"
+        android:hint="Enter your Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="246dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
